@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk')
 
 // Creates Console Password for a user
-// So he can login into AWS console
+// So he can login into AWS Management console
 
 const iam = new AWS.IAM()
 
