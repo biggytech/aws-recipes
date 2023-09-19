@@ -6,7 +6,7 @@ const params = {
   // all policies should be detached
   // & access keys should be deleted (not deactivated) from the user
   // before a user deletion
-  // otherwise a DeleteConflict occur
+  // otherwise a DeleteConflict (status 409) occur
   UserName: 'tempuser',
 }
 
