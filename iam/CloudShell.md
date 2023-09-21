@@ -18,4 +18,10 @@ AWS recommends passing params for Login profile via JSON file.
 `aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess --user-name NeliHarbuzava`
 
 ## Create access key
-``
+`aws iam create-access-key --user-name NeliHarbuzava`
+
+## Create user group
+`aws iam create-group --group-name S3Admins`
+
+## Add user to group
+`aws iam add-user-to-group --user-name NeliHarbuzava --group-name S3Admins`
