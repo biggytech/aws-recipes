@@ -13,7 +13,7 @@ const params = {
 const run = async () => {
     try {
         const data = await client.send(new UpdateTableCommand(params));
-        console.log("Success", data.TableDescription);
+        console.log("Success", data);
     } catch (err) {
         console.log("Error", err);
     }
