@@ -1,11 +1,13 @@
 const AWS = require('aws-sdk')
 
-const s3 = new AWS.S3();
+const s3 = new AWS.S3()
 
-s3.getObject({
+const params = {
     Bucket: 'files',
-    Key: 'newfile.txt'
-}, (err, data) => {
+    Prefix: 'newfile'
+}
+
+s3.listObjects(params, (err, data) => {
     if (err) {
         console.log(err);
     } else {
