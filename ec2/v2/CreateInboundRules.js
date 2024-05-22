@@ -3,6 +3,8 @@ const AWS = require('aws-sdk');
 const ec2 = new AWS.EC2();
 
 // inbound rules - incoming traffic
+// ingress - inbound
+// egress - outbound
 ec2.authorizeSecurityGroupIngress({
     GroupId: 'sg-0497cda3727ea122f',
     IpPermissions: [
