@@ -1,6 +1,6 @@
 import { EC2Client, CreateVolumeCommand } from '@aws-sdk/client-ec2';
 
-// EBS - Elastic Block Storage (SSDs/HDDs for EC2 instances)
+// EBS - Elastic Block Store (SSDs/HDDs for EC2 instances)
 
 const ec2Client = new EC2Client();
 
