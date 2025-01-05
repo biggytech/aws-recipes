@@ -2,6 +2,10 @@ import { IAMClient, CreateRoleCommand } from "@aws-sdk/client-iam";
 
 const iamClient = new IAMClient();
 
+/**
+ * Create a role that is able to create lambda functions
+ */
+
 const role_policy = {
     "Version": "2012-10-17",
     "Statement": [
@@ -30,4 +34,4 @@ const run = async () => {
     }
 };
 
-exports.handler = run;
+run();
