@@ -4,7 +4,7 @@ const { DynamoDBClient, GetItemCommand } = require('@aws-sdk/client-dynamodb');
  * to lambda function
  */
 
-const ddClient = new DynamoDBClient();
+const ddbClient = new DynamoDBClient();
 
 const params = {
     TableName: 'Employee',
@@ -15,7 +15,7 @@ const params = {
 
 exports.handler = async (event) => {
     try {
-        const data = await ddClient.send(new GetItemCommand(params));
+        const data = await ddbClient.send(new GetItemCommand(params));
         const items = data.Item;
 
         console.log(items);
