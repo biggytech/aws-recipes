@@ -14,5 +14,5 @@ exports.myfunc = (event) => {
         } else {
             console.log('Bucket created successfully', data.Location);
         }
-    }
+    });
 }
